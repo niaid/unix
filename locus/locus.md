@@ -150,7 +150,7 @@ exit
 ## Batch Job
 
 - [Locus documentation](https://locus.niaid.nih.gov/userportal/documentation.php#Getting-Started/Submitting-your-First-Job)
-- Alternative to [interactive session](#interactive-session) - run a script of commands in a *batch job* - after job starts, can close laptop and walk away while runs on Locus.  Emails you when done.
+- Alternative to [interactive session](#interactive-session) - run a script of commands in a *batch job* - after submit job, can close laptop and walk away while it runs on Locus.  Emails you when done.
 - [job_submit.sh](job_submit.sh) - Create/edit script on laptop using *plain text* editor like TextEdit or Notepad or *programming* editor like [Atom](https://atom.io/) or [VSCode](https://code.visualstudio.com/) and transfer by [mounting Locus folder](#access-folders).  (*don't use a document editor like Word to edit scripts*)
 - Submit job
 
@@ -188,7 +188,7 @@ exit
 
 ## More information for the curious
 
-- [Locus website](https://locus.niaid.nih.gov) 
+- [Locus website](https://locus.niaid.nih.gov) has more detailed information on commands and usage.
 - **Under the hood:** Operating system is RedHatEnterpriseServer (related to CentOS and Fedora)
   - For job scheduling system, Locus uses [Univa Grid Engine (UGE)](http://www.univa.com/products/) - [older man pages](https://www.gridengine.eu/mangridengine/manuals.html) - formerly SGE/Sun Grid Engine.
     - [Biowulf](https://hpc.nih.gov), NIH's agency-wide cluster, uses a system called Slurm, so the commands may not be the same
@@ -259,7 +259,7 @@ BiocManager::install("package_name")
 Locus is a **shared resource**.  While it is very large and powerful, there are still only a finite number of cpus/job slots and a finite amount of memory.
 
 - You cannot run jobs on the login/submit/head nodes.  Do **NOT** run computational or memory-intensive tasks on the head nodes!  It slows them down for your colleagues.
-- Be conscious of [the number of job slots and amount of memory](https://locus.niaid.nih.gov/userportal/workload2.php) you are using at any one time.  Locus has [some](https://locus.niaid.nih.gov/userportal/workload2.php) limits, but they are pretty generous.  If you think you will be using resources close to the limit for days at a time or you need more, contact Locus staff. 
+- Be conscious of [the number of job slots and amount of memory](https://locus.niaid.nih.gov/userportal/workload2.php) you are using at any one time.  Locus has some limits, but they are pretty generous.  If you think you will be using resources close to the limit for days at a time or you need more, contact Locus staff. 
 - Learn how to submit [array jobs](https://locus.niaid.nih.gov/userportal/documentation.php#Getting-Started/Other-Job-Types/Array) and how to limit them (`-tc` is array job limit flag).  
   - Alternatively, learn a pipeline framework like [snakemake](https://snakemake.readthedocs.io/en/stable/) or [nextflow](https://www.nextflow.io) which automatically submit jobs based on your pipeline and number of inputs, and have easy options for limiting (efficiently!).  They are especially efficient for multi-step workflows.
 
