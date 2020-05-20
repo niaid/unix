@@ -96,8 +96,7 @@ cd
 cp file path/to/new/location
 # copy a directory
 cp -r directory newdirectory
-# copy file to the directory you are currently in. 
-# '.' is shortcut for current directory
+# copy file to the directory you are currently in. '.' is shortcut for current directory
 cp file .
 
 ## move a file
@@ -117,8 +116,7 @@ command -h | less
 ## print the content of a file to the screen
 cat file
 
-## delete files - CAUTION!  There is no recycling bin.  Files removed are gone forever.
-## (well, technically, Locus makes backups, but only once a day)
+## delete files - CAUTION!  There is no recycling bin.  Files removed are gone forever (well, technically, Locus makes backups, but only once a day)
 rm file
 rm -r directory
 ```
