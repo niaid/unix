@@ -1,7 +1,7 @@
 # Locus
 A gentle introduction to using NIAID's Locus HPC cluster.
 
-- [Overview](overview)
+- [Overview](#overview)
 - [Login via ssh](#login-via-ssh)
 - [Interactive session](#interactive-session)
 - [Access folders](#access-folders)
