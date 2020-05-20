@@ -56,10 +56,10 @@ qrsh -l h_vmem=16G
 - **Mac**: in Finder, Cmd+K smb://locusfileserver.niaid.nih.gov/username
 - **Windows**: \\\locusfileserver.niaid.nih.gov\username
 
-**Other folders on Locus:** `/hpcdata/{rest/of/path}`.  When you mount, replace `/hpcdata/` :
+**Other folders on Locus:** `/hpcdata/rest/of/path`.  When you mount, replace `/hpcdata/` :
 
-- **Mac:** smb://locusfileserver.niaid.nih.gov/{rest/of/path}
-- **Windows:** \\\locusfileserver.niaid.nih.gov\\{rest\\of\\path}
+- **Mac:** smb://locusfileserver.niaid.nih.gov/rest/of/path
+- **Windows:** \\\locusfileserver.niaid.nih.gov\\rest\\of\\path
 
 ### Access folders via sftp
 
