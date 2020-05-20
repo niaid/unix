@@ -70,7 +70,7 @@ qrsh -l h_vmem=16G
 
 ## Basic unix commands
 
-- [Cheat sheet](https://web.stanford.edu/class/physics91SI/handouts/04_UNIX_Commands.pdf); [Longer cheat sheet](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/unix_cheatsheet.html)
+- [Cheat sheet](../Unix-Linux-Cheat-SheetWorld.pdf); [Longer cheat sheet](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/unix_cheatsheet.html)
 
 ```bash
 ## list files in directory
