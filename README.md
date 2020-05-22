@@ -34,3 +34,6 @@ Description: Example of until loop script.
 
 - [while_loop.sh](while_loop.sh)  
 Description: Example of while loop script.
+
+## Past Class Materials
+- [Sept 2019](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
