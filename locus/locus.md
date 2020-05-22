@@ -216,8 +216,7 @@ scp -r username@ai-submit2.niaid.nih.gov:/classhome/username ~/Desktop
 ## basic command structure
 ## `-r` means "recursive" so we copy the folder and everything in it.
 scp -r fromfoldername tofoldername
-
-## general command
+## fromfolder is on remote server and tofolder is on local laptop
 scp -r username@servername:serverfolderpath laptopfolderpath
  
 ## You could also use rsync
