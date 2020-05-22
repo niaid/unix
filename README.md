@@ -26,9 +26,6 @@ Description: Example of if-then-else-fi script.
 - [for_loop.sh](for_loop.sh)  
 Description: Example of for loop script.
 
-- [for_loop.sh](for_loop.sh)  
-Description: Example of for loop script.
-
 - [for_loop_c.sh](for_loop_c.sh)  
 Description: Example of for loop script in cshell.
 
