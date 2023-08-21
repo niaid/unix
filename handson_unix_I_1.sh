@@ -153,15 +153,31 @@ cd ./fastqs
 ls 22057_S2
 ls *.gz
 
+# We can also save the list of files to another file.  When we run a command like "ls" it
+# is printing output to the screen - called STDOUT.  But, we can redirect this output
+# to a file.
+
+ls *.gz >myfiles.txt
+
 
 # So far we have covered listing the contents of directories and moving/copying/deleting either
 # files and/or directories. Now we will quickly cover how you can look at files; in Unix the less
 # command lets you view (but not edit) text files.
 
-less job_script.sh
+less myfiles.txt
 
 
 # When you are using less, you can bring up a page of help commands by pressing h , scroll forward a
 # page by pressing space , or go forward or backwards one line at a time by pressing j or k .
 # To exit less, press q (for quit). The less program also does about a million other useful things
 # (including text searching).
+
+
+# Simple editing of files.
+# nano is a simple text editor available in most unix environments.
+# There are helpful commands at the bottom of the screen. The "^" symbol means the Control key.  So,
+# for example, to exit nano, use "^X" or Control-X.  If you have made any changes, it will ask you if
+# you want to save. Enter "Y" for yes to save and then to confirm the file name, you can press Enter.
+# (Answer "N" for no which will discard all changes).
+
+nano job_script.sh
