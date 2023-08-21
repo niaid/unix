@@ -1,41 +1,42 @@
 # Intro to Locus and unix
-Training materials for UNIX course
+Training materials for Locus and UNIX introductory course
 
-**Resources:**  
+**Sept 20, 2023**  
 
-- Email bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
+- Instructors: Poorani Subramanian ([BCBB](https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch)) and Adam Erck ([NIAID High Performance Computing](https://locus.niaid.nih.gov/))
+- Help Emails: bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
 - [Locus NIAID HPC notes](locus/locus.md)
 
 
 
-### Example Scripts
+### Class Scripts
 
-- [handson_unix_I_1.sh](handson_unix_I_1.sh)  
+[handson_unix_I_1.sh](handson_unix_I_1.sh)  
 Description: Collection of basic UNIX commands to navigate and move files.
 
+[job_script.sh](job_script.sh)  
+Description: batch job script for submission with UGE on Locus
+
+------
+
+
+
+### Additional Example Scripts
+
 - [handson_unix_I_2.sh](handson_unix_I_2.sh)  
-Description: Collection of basic UNIX commands for searching plain-test data sets.
-
+  Description: Collection of basic UNIX commands for searching plain-test data sets.
 - [how_to_write_bash_script.sh](./example_scripts/how_to_write_bash_script.sh)  
-Description: Description of how to write simple script.
-
-- [hello.sh](hello.sh)  
-Description: First script.
-
+  Description: Description of how to write simple script.
 - [organize.sh](example_scripts/organize.sh)  
-Description: Example of if-then-else-fi script.
-
+  Description: Example of if-then-else-fi script.
 - [for_loop.sh](example_scripts/for_loop.sh)  
-Description: Example of for loop script.
-
+  Description: Example of for loop script.
 - [for_loop_c.sh](example_scripts/for_loop_c.sh)  
-Description: Example of for loop script in cshell.
-
+  Description: Example of for loop script in cshell.
 - [until_loop.sh](example_scripts/until_loop.sh)  
-Description: Example of until loop script.
-
+  Description: Example of until loop script.
 - [while_loop.sh](example_scripts/while_loop.sh)  
-Description: Example of while loop script.
+  Description: Example of while loop script.
 
 ## Past Class Materials
 - [Sept 2019](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
