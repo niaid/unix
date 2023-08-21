@@ -10,7 +10,7 @@
 #$ -j y
 
 # Tell the job your memory requirements
-#$ -l mem_free=2G,h_vmem=8G
+#$ -l h_vmem=8G
 
 # Send mail when the job is submitted, and when the job completes
 #$ -m be
@@ -19,18 +19,35 @@
 #$ -M your_address@niaid.nih.gov
 
 
+## print useful information about the computing environment
+## to the log file
+echo ""
+echo Hello World!
+echo I am: `hostname`  now at: `date`
+echo Running in directory: `pwd`
+echo ""
 
 
+## load the module for the fastqc program
 module load FastQC/0.11.9-Java-1.8.0_45
 
+## list loaded modules
+module list
+
+## run fastqc on our 2 fastq files
 fastqc 22057_S2_R1_subsample.fastq.gz
 fastqc 22057_S2_R2_subsample.fastq.gz
 
+## unload fastqc and any other loaded modules
 module purge
 
+## load multiqc
 module load MultiQC/1.12
 
+## run multiqc which will summarize the results of our fastqc commands.
 multiqc .
 
 
-sleep 200
+# sleep pauses for a specified number of seconds.  we add this
+# to make sure our job takes enough time for us to practice monitoring with qstat.
+sleep 300
