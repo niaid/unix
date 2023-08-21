@@ -1,12 +1,14 @@
-# unix
+# Intro to Locus and unix
 Training materials for UNIX course
 
 **Resources:**  
-- https://bioinformatics.niaid.nih.gov for more Training or Services or email bioinformatics@niaid.nih.gov
+
+- Email bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
 - [Locus NIAID HPC notes](locus/locus.md)
 
 
-### Scripts
+
+### Example Scripts
 
 - [handson_unix_I_1.sh](handson_unix_I_1.sh)  
 Description: Collection of basic UNIX commands to navigate and move files.
@@ -14,25 +16,25 @@ Description: Collection of basic UNIX commands to navigate and move files.
 - [handson_unix_I_2.sh](handson_unix_I_2.sh)  
 Description: Collection of basic UNIX commands for searching plain-test data sets.
 
-- [handson_unix_II_1.sh](handson_unix_II_1.sh)  
+- [how_to_write_bash_script.sh](./example_scripts/how_to_write_bash_script.sh)  
 Description: Description of how to write simple script.
 
 - [hello.sh](hello.sh)  
 Description: First script.
 
-- [organize.sh](organize.sh)  
+- [organize.sh](example_scripts/organize.sh)  
 Description: Example of if-then-else-fi script.
 
-- [for_loop.sh](for_loop.sh)  
+- [for_loop.sh](example_scripts/for_loop.sh)  
 Description: Example of for loop script.
 
-- [for_loop_c.sh](for_loop_c.sh)  
+- [for_loop_c.sh](example_scripts/for_loop_c.sh)  
 Description: Example of for loop script in cshell.
 
-- [until_loop.sh](until_loop.sh)  
+- [until_loop.sh](example_scripts/until_loop.sh)  
 Description: Example of until loop script.
 
-- [while_loop.sh](while_loop.sh)  
+- [while_loop.sh](example_scripts/while_loop.sh)  
 Description: Example of while loop script.
 
 ## Past Class Materials

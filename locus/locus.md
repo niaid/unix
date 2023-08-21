@@ -10,15 +10,16 @@
 
 ## Overview
 
-[Locus website](https://locus.niaid.nih.gov) - if you don't have a Locus server account, the first time you log into the website (using your regular NIH creds), you will get an email telling you how to request an account.  Can also email [NIAIDHPCSUPPORT@niaid.nih.gov](mailto:NIAIDHPCSUPPORT@niaid.nih.gov).  Locus is intended for use by NIAID staff.
+[Locus website](https://locus.niaid.nih.gov) (must be on NIHVPN) - if you don't have a Locus server account, the first time you log into the website (using your regular NIH creds), you will get an email telling you how to request an account.  Can also email [NIAIDHPCSUPPORT@niaid.nih.gov](mailto:NIAIDHPCSUPPORT@niaid.nih.gov).  Locus is intended for use by NIAID staff.
 
 ### Why do you need HPC?
 
 Locus is a *H*igh *P*erformance *C*omputing cluster. Why do you need it?
 
-- You need resources (software, power) not available on your local laptop
+- You need resources (software, processing power, memory/RAM) not available on your local laptop
+- You need to run a job that can make use of parallel computing or CPU or GPU or other hardware not available locally
 - You need to run a program (job) that will run for a very long time
-- You need to run a job that can make use of parallel computing
+- You need to run an analysis in a consistent environment that will be available in the future* or that you can share with others
 
 <img src="img/locus_cluster_fixed.svg" width="65%">
 
@@ -223,6 +224,22 @@ scp -r username@servername:serverfolderpath laptopfolderpath
 rsync -r username@ai-submit2.niaid.nih.gov:/classhome/username ~/Desktop/myfolder
 ```
 
+### Limitations and being a good citizen
+
+Locus is a **shared resource**.  While it is very large and powerful, there are still only a finite number of cpus/job slots and a finite amount of memory.
+
+- You cannot run jobs on the login/submit/head nodes.  Do **NOT** run computational or memory-intensive tasks on the head nodes!  It slows them down for your colleagues.
+- Be conscious of [the number of job slots and amount of memory](https://locus.niaid.nih.gov/userportal/workload2.php) you are using at any one time.  Locus has some limits, but they are pretty generous.  If you think you will be using resources close to the limit for days at a time or you need more, contact Locus staff. 
+- Learn how to submit [array jobs](https://locus.niaid.nih.gov/userportal/documentation.php#Getting-Started/Other-Job-Types/Array) and how to limit them (`-tc` is array job limit flag).  
+  - Alternatively, learn a pipeline framework like [snakemake](https://snakemake.readthedocs.io/en/stable/) or [nextflow](https://www.nextflow.io) which automatically submit jobs based on your pipeline and number of inputs, and have easy options for limiting (efficiently!).  They are especially efficient for multi-step workflows.
+
+**Other limitations**
+
+- If you want to run Rstudio on Locus, the best way is to use the NoMachine Virtue Machine, to do that you need to get a LDAP account and set up a connection following instruction [here](https://locus.niaid.nih.gov/userportal/documentation.php#FAQ/the-nomachine-terminal-server). 
+- Interactive 3D ploting using the "rgl" package is not possible because a OpenGL library is lacking on Locus.  
+
+
+
 
 
 ### JupyterHub hosted by Locus
@@ -252,19 +269,4 @@ install.packages("package_name")
 BiocManager::install("package_name")
 ```
 
-### Limitations and being a good citizen
-
-Locus is a **shared resource**.  While it is very large and powerful, there are still only a finite number of cpus/job slots and a finite amount of memory.
-
-- You cannot run jobs on the login/submit/head nodes.  Do **NOT** run computational or memory-intensive tasks on the head nodes!  It slows them down for your colleagues.
-- Be conscious of [the number of job slots and amount of memory](https://locus.niaid.nih.gov/userportal/workload2.php) you are using at any one time.  Locus has some limits, but they are pretty generous.  If you think you will be using resources close to the limit for days at a time or you need more, contact Locus staff. 
-- Learn how to submit [array jobs](https://locus.niaid.nih.gov/userportal/documentation.php#Getting-Started/Other-Job-Types/Array) and how to limit them (`-tc` is array job limit flag).  
-  - Alternatively, learn a pipeline framework like [snakemake](https://snakemake.readthedocs.io/en/stable/) or [nextflow](https://www.nextflow.io) which automatically submit jobs based on your pipeline and number of inputs, and have easy options for limiting (efficiently!).  They are especially efficient for multi-step workflows.
-
-**Other limitations**
-
-- If you want to run Rstudio on Locus, the best way is to use the NoMachine Virtue Machine, to do that you need to get a LDAP account and set up a connection following instruction [here](https://locus.niaid.nih.gov/userportal/documentation.php#FAQ/the-nomachine-terminal-server). 
-- Interactive 3D ploting using the "rgl" package is not possible because a OpenGL library is lacking on Locus.  
-
-
-
+### 
