@@ -17,6 +17,21 @@ Description: Collection of basic UNIX commands to navigate and move files.
 [job_script.sh](job_script.sh)  
 Description: batch job script for submission with UGE on Locus
 
+
+
+### Terminal/Shell Software
+
+We will be connecting to Locus via a terminal/shell program.  Here are the instructions for finding/installing the appropriate program depending on your OS:
+
+- **MacOS:** We will use Terminal.app which should already be installed; see [How to Open Terminal on Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/2.12/mac/11.0) for where to find it.
+- **Windows:** We will use Putty.  To install:
+  1. Go to https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+  2.  Scroll down to "Alternative binary files."
+  3. Look for **`putty.exe` (the SSH and Telnet client itself)**.
+  4. Click on the blue "putty.exe" link next to *64-bit x86* or *32-bit x86* depending on your computer. If you do not know which version your computer can use, select the 32-bit version.  This will download the "putty.exe" executable program.
+  5. To start Putty, navigate to where you downloaded putty.exe.  This will open the Putty window.
+  6. **Note:** If you install Putty this way using the alternative binary file, you should not need administrative privileges.  Please feel free to email us (see contact info above) if you have any problems installing.
+
 ------
 
 
