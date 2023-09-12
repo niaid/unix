@@ -29,8 +29,8 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
   2.  Scroll down to "Alternative binary files."
   3. Look for **`putty.exe` (the SSH and Telnet client itself)**.
   4. Click on the blue "putty.exe" link next to *64-bit x86* or *32-bit x86* depending on your computer. If you do not know which version your computer can use, select the 32-bit version.  This will download the "putty.exe" executable program.
-  5. To start Putty, navigate to where you downloaded putty.exe.  This will open the Putty window.
-  6. **Note:** If you install Putty this way using the alternative binary file, you should not need administrative privileges.  Please feel free to email us (see contact info above) if you have any problems installing.
+  5. To start Putty, navigate to where you downloaded putty.exe, and double click on it.  This will open the Putty window.
+  6. **Note:** If you install Putty this way using the alternative binary file, you should not need administrative privileges.  Please feel free to email us (see contact info above) if you have any problems installing.
 
 ------
 
