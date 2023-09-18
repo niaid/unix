@@ -209,7 +209,10 @@ module unload Java
 
 nano job_script.sh
 
+# submit a batch job
+qsub job_script.sh
 
-
-## For MacOS/Linux to transfer files from Locus to your local computer
+## For MacOS/Linux to transfer files from Locus to your local computer, run this
+# in a terminal *on your local computer*
+hostname # check if you are on local
 scp ngsc###@ai-submit2.niaid.nih.gov:~/fastqs/multiqc_report.html .
