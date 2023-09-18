@@ -5,7 +5,7 @@
 #          examples of their usage.
 # Date -
 # Creation : August 9, 2018
-# Last modification : August 9, 2023 by Poorani Subramanian
+# Last modification : Sept 18, 2023 by Poorani Subramanian
 #
 # Usage -
 # The document is for reference purpose only. If needed it can be used as
@@ -60,12 +60,22 @@ ls ../..
 ls .
 
 # If every Unix command has so many options, you might be wondering how you find out what they
-# are and what they do. Well, thankfully every Unix command has an associated ‘manual’ that you
+# are and what they do. Well, thankfully every Unix command has an associated 'manual' page that you
 # can access by using the man command. E.g.
 
-man ls
+man ls # use "q" to exit the man page
 man cd
 man man # yes even the man command has a manual page
+
+
+
+# The other convention for printing help is to use "--help" or "-h" or sometimes "-help".
+# - For unix commands, this help may just be a summary of the man page. Not all unix commands have "-h" option.
+# - For non-unix programs written by third parties (e.g. scientific tools), they
+# may not have a man page, so using "--help" is the only way to get help.
+ls -h
+cd -h
+
 
 # There are many, many different options for the ls command. Try out the following
 ls -l
