@@ -53,8 +53,8 @@ qrsh -l h_vmem=16G
 
 **Home directory**
 
-- **Mac**: in Finder, Cmd+K smb://locusfileserver.niaid.nih.gov/username
-- **Windows**: \\\locusfileserver.niaid.nih.gov\username
+- **Mac**: in Finder, Cmd+K smb://locusdata.niaid.nih.gov/username
+- **Windows**: \\\locusdata.niaid.nih.gov\username
 
 **Other folders on Locus:** `/hpcdata/rest/of/path`.  When you mount, replace `/hpcdata/` :
 
