@@ -13,6 +13,15 @@
 # Some of the materials has been used from the book
 # Unix and Perl Primer for Biologists (Version 3.1.2 — October 2016) - Keith Bradnam & Ian Korf
 
+# Open an interactive session
+# When you log into Locus via ssh, you will be on the submit/head node.
+# It is ok to use the submit node to look around and submit batch jobs, however
+# anything else slows down the server for everyone else.  To guard against that
+# in this class, we are opening the interactive session at the beginning which will connect
+# us to a compute node.
+# This is a best practice.
+qrsh
+
 
 # Unix keeps files arranged in a hierarchical structure. From the ‘top-level’ of the computer,
 # there will be a number of directories, each of which can contain files and subdirectories,
