@@ -182,6 +182,23 @@ less myfiles.txt
 # To exit less, press q (for quit). The less program also does about a million other useful things
 # (including text searching).
 
+# Modules
+# module list lists all loaded modules
+# which looks for the program - here we look for the program "fastqc"
+module list
+which fastqc
+
+# module load will load the program/tool
+module load FastQC/0.11.9-Java-1.8.0_45
+which fastqc
+
+# run fastqc
+fastqc 22057_S2_R1_subsample.fastq.gz
+
+# unload module
+module unload FastQC/0.11.9-Java-1.8.0_45
+module list
+module unload Java
 
 # Simple editing of files.
 # nano is a simple text editor available in most unix environments.

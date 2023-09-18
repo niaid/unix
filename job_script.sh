@@ -42,7 +42,7 @@ fastqc 22057_S2_R2_subsample.fastq.gz
 module purge
 
 ## load multiqc
-module load MultiQC/1.12
+module load multiqc/1.9-Python-3.6.13
 
 ## run multiqc which will summarize the results of our fastqc commands.
 multiqc .
