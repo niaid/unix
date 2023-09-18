@@ -208,3 +208,8 @@ module unload Java
 # (Answer "N" for no which will discard all changes).
 
 nano job_script.sh
+
+
+
+## For MacOS/Linux to transfer files from Locus to your local computer
+scp ngsc###@ai-submit2.niaid.nih.gov:~/fastqs/multiqc_report.html .
