@@ -183,10 +183,15 @@ less myfiles.txt
 # (including text searching).
 
 # Modules
-# module list lists all loaded modules
+#
 # which looks for the program - here we look for the program "fastqc"
-module list
 which fastqc
+
+# module list lists all currently loaded modules
+module list
+
+# search for the module we want to use
+module avail FastQC
 
 # module load will load the program/tool
 module load FastQC/0.11.9-Java-1.8.0_45
@@ -202,17 +207,30 @@ module unload Java
 
 # Simple editing of files.
 # nano is a simple text editor available in most unix environments.
+# Move the cursor using arrow keys to where you want to type/edit.
 # There are helpful commands at the bottom of the screen. The "^" symbol means the Control key.  So,
 # for example, to exit nano, use "^X" or Control-X.  If you have made any changes, it will ask you if
 # you want to save. Enter "Y" for yes to save and then to confirm the file name, you can press Enter.
 # (Answer "N" for no which will discard all changes).
-
 nano job_script.sh
 
 # submit a batch job
 qsub job_script.sh
 
+# check the status of your job
+# running qstat with no arguments will list ALL running jobs - jobs run by ALL users of Locus
+# Limit to just looking at your jobs
+qstat -u username
+
+# look at information about a completed job
+qacct -j jobid
+
+####### For MacOS #########
+
 ## For MacOS/Linux to transfer files from Locus to your local computer, run this
 # in a terminal *on your local computer*
 hostname # check if you are on local
 scp ngsc###@ai-submit2.niaid.nih.gov:~/fastqs/multiqc_report.html .
+
+## For MacOS, open local folder in Finder
+open .
