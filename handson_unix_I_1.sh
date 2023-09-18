@@ -92,8 +92,12 @@ ls -R
 ls -l -t -r
 ls -lh
 
-# If we want to make a new directory, we can use the mkdir command:
+# General structure of unix command
+# Command argument1 <argument...>
+# Command -o --option
+# Command -o argument1
 
+# If we want to make a new directory, we can use the mkdir command:
 mkdir Temp1
 ls
 cd Temp1
