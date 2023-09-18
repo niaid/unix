@@ -153,7 +153,7 @@ ls
 # "-r" stands for "recursive".  We will recursively copy everything in a directory - including
 # the directory itself to our current working directory ".".
 
-cp -r /hpcdata/bcbb/poorani/unix_class/fastqs .
+cp -r /hpcdata/ngsclass/bcbb/fastqs .
 ls
 ls ./fastqs
 cd ./fastqs
