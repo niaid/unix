@@ -28,7 +28,7 @@ qrsh
 # and each of those in turn can of course contain more files and directories and so on,
 # ad infinitum. It’s important to note that you will always be “in” a directory when using
 # the terminal. The default behavior is that when you open a new terminal you start in your own
-# ’home” directory (containing files and directories that only you can modify).
+# "home" directory (containing files and directories that only you can modify).
 
 ls
 
@@ -170,6 +170,7 @@ cp -r /hpcdata/ngsclass/bcbb/fastqs .
 ls
 ls ./fastqs
 cd ./fastqs
+ls -lh
 
 # Only list some files using a wildcard "*" character or tab.
 
