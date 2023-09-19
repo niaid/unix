@@ -83,7 +83,7 @@ man man # yes even the man command has a manual page
 # - For non-unix programs written by third parties (e.g. scientific tools), they
 # may not have a man page, so using "--help" is the only way to get help.
 ls -h
-cd -h
+cd --help
 
 
 # There are many, many different options for the ls command. Try out the following
@@ -91,11 +91,6 @@ ls -l
 ls -R
 ls -l -t -r
 ls -lh
-
-# General structure of unix command
-# Command argument1 <argument...>
-# Command -o --option
-# Command -o argument1
 
 # If we want to make a new directory, we can use the mkdir command:
 mkdir Temp1
@@ -112,15 +107,28 @@ mkdir Temp3
 rmdir Temp3
 rmdir Temp1 # it will not remove Temp1 as it is not an empty directory
 rm -r Temp1 # will remove both Temp1 and the directories under it.
-            # Depending on your settings you ma have to use the option "rm -rf"
+# Depending on your settings you ma have to use the option "rm -rf"
 
 # In the last example we created the two temp directories in two separate steps.
 # If we had used the -p option of the mkdir command we could have done this in one step
 
 mkdir -p Temp1/Temp2
 ls Temp1
-rm -r Temp1
 
+
+# General Structure of Unix Command
+# Command argument1 <argument...>
+# Command -o --option
+# Command -o argument1
+
+
+# The Unix command touch will let us create a new, empty file. The touch command does other things
+# too, but for now we just want a couple of files to work with.
+touch interesting.txt
+touch boring.txt
+ls
+
+# Tab completion
 # Saving keystrokes may not seem important, but the longer that you spend typing in a terminal
 # window, the happier you will be if you can reduce the time you spend at the keyboard.
 # Especially, as prolonged typing is not good for your body. So the best Unix tip to learn early
@@ -128,31 +136,39 @@ rm -r Temp1
 # systems. Type enough letters that uniquely identify the name of a file, directory or program
 # and press tab...Unix will do the rest.
 
-# The Unix command touch will let us create a new, empty file. The touch command does other things
-# too, but for now we just want a couple of files to work with.
-touch interesting.txt
-touch boring.txt
-ls
-rm boring.txt #"use "rm -f" if "rm" options asks for your permission
+# Delete file using "rm"
 
+rm bor # use tab after this to complete
+
+
+# WARNING
 # "rm" is the most dangerous Unix command you will ever learn!
-# Potentially, rm is a very dangerous command; if you delete something with rm , you will not get
-# it back! It does not go into the trash or recycle can, it is permanently removed. It is possible
+# If you delete something with rm , you will not get
+# it back! It does not go into the trash or recycle can, it is PERMANENTLY removed**. It is possible
 # to delete everything in your home directory (all directories and subdirectories) with rm ,
 # that is why it is such a dangerous command.
 # Let me repeat that last part again. It is possible to delete EVERY file you have ever created
-# with the rm command. Later in the workshop we can go over some tricks to make the rm command
-# less dangerous.
+# with the rm command.
+# **Locus does make automated backups, but they take some time - they are not instantaneous.
 
-# Copying files with the cp (copy) command. The first argument is the source location of the file.
+
+
+# Copying files with the cp (copy) command.
+# The first argument is the source location of the file.
 # The second argument is the target or destination location.
 # Remember to always specify a source and a target location. Let’s copy interesting.txt to boring.txt
 
 cp interesting.txt boring.txt
 ls
 
+# Moving files
+# We will move a file from our home directory (source location) to the Temp1 directory
+# (target location).
+mv boring.txt ./Temp1
+ls
+ls ./Temp1
 
-# In the earlier example, the destination for the mv command was a directory name (Temp).
+# In the earlier example, the destination for the mv command was a directory name (Temp1).
 # So we moved a file from its source location to a target location
 # (‘source’ and ‘target’ are important concepts for many Unix commands). But
 # note that the target could have also been a (different) file name, rather than a directory.
@@ -198,11 +214,11 @@ less myfiles.txt
 
 # Modules
 #
-# which looks for the program - here we look for the program "fastqc"
-which fastqc
-
 # module list lists all currently loaded modules
 module list
+
+# which looks for the program - here we look for the program "fastqc"
+which fastqc
 
 # search for the module we want to use
 module avail FastQC
@@ -238,6 +254,13 @@ qstat -u username
 
 # look at information about a completed job
 qacct -j jobid
+
+
+# History
+# Another keystroke saving feature is the history.  Use the up arrow to see old commands and then
+# Press enter to run one of them.
+# To exit/clear the prompt use Control-C - in general Control-C can be used to exit/interrupt any running
+# program
 
 ####### For MacOS #########
 
