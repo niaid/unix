@@ -26,16 +26,22 @@ qrsh
 # Unix keeps files arranged in a hierarchical structure. From the ‘top-level’ of the computer,
 # there will be a number of directories, each of which can contain files and subdirectories,
 # and each of those in turn can of course contain more files and directories and so on,
-# ad infinitum. It’s important to note that you will always be “in” a directory when using
-# the terminal. The default behavior is that when you open a new terminal you start in your own
+# ad infinitum.
+# - It’s important to note that you will always be “in” a directory when using
+# the terminal. The directory you are in is called the "Working Directory"
+
+# There may be many hundreds of directories on any Unix machine, so how do you know which one
+# you are in?
+# - The command pwd will Print the Working Directory.
+
+pwd
+
+# The default behavior is that when you open a new terminal you start in your own
 # "home" directory (containing files and directories that only you can modify).
+# What's inside our home directory?  Use the "ls" command to list all files and directories
 
 ls
 
-# There may be many hundreds of directories on any Unix machine, so how do you know which one
-# you are in? The command pwd will Print the Working Directory.
-
-pwd
 
 # To change directories in Unix, we use the cd command. We can use the pwd command to find
 # out which directory we are in every time we change directory.
@@ -57,11 +63,13 @@ cd # go back home
 ## go "up" 2 directories
 cd ../..
 pwd
+ls
+# go back home
 cd
-pwd
+
 
 # The .. operator that we saw earlier can also be used with the ls command.
-ls ../..
+ls ..
 
 # The current working directory that you are in is denoted as ".".  For ls, it is understood that
 # you mean "." but you can also supply it - here we just practice.
@@ -82,19 +90,23 @@ man man # yes even the man command has a manual page
 # - For unix commands, this help may just be a summary of the man page. Not all unix commands have "-h" option.
 # - For non-unix programs written by third parties (e.g. scientific tools), they
 # may not have a man page, so using "--help" is the only way to get help.
-ls -h
+ls --help
 cd --help
 
 
-# There are many, many different options for the ls command. Try out the following
+
+# There are many, many different options for the ls command. Try out the following:
 ls -l
+## -l is "long format" https://linuxconfig.org/understanding-of-ls-command-with-a-long-listing-format-output-with-permission-bits
 ls -R
-ls -l -t -r
 ls -lh
+ls -l -t -r
+## -a means all - it shows hidden files
+ls -a
 
 # If we want to make a new directory, we can use the mkdir command:
 mkdir Temp1
-ls
+ls -l
 
 # Make nested directories using "-p"
 mkdir -p Temp2/Temp3
@@ -159,7 +171,7 @@ ls
 mkdir Temp1
 mv boring.txt ./Temp1
 ls
-ls ./Temp1
+ls -R
 
 # In the earlier example, the destination for the mv command was a directory name (Temp1).
 # So we moved a file from its source location to a target location
@@ -179,14 +191,16 @@ cp -r /hpcdata/ngsclass/bcbb/fastqs .
 ls
 ls ./fastqs
 cd ./fastqs
+## ls -lh is the same as ls -l -h
 ls -lh
 
 # Only list some files using a wildcard "*" character or tab.
 
-ls 22057_S2
 ls *.gz
+ls 22057_S2 # tab
+## Type Control+C to exit without running a command
 
-# We can also save the list of files to another file.  When we run a command like "ls" it
+# We can save the list of files to another file.  When we run a command like "ls" it
 # is printing output to the screen - called STDOUT.  But, we can redirect this output
 # to a file.
 
@@ -202,7 +216,7 @@ less myfiles.txt
 
 # When you are using less, you can bring up a page of help commands by pressing h , scroll forward a
 # page by pressing space , or go forward or backwards one line at a time by pressing j or k .
-# To exit less, press q (for quit). The less program also does about a million other useful things
+# - To exit less, press q (for quit). The less program also does about a million other useful things
 # (including text searching).
 
 # Modules
@@ -218,6 +232,7 @@ module avail FastQC
 
 # module load will load the program/tool
 module load FastQC/0.11.9-Java-1.8.0_45
+module list
 which fastqc
 
 # run fastqc
@@ -247,6 +262,7 @@ qstat -u username
 
 # look at information about a completed job
 qacct -j jobid
+less fastqc.o
 
 
 # History
@@ -254,6 +270,11 @@ qacct -j jobid
 # Press enter to run one of them.
 # To exit/clear the prompt use Control-C - in general Control-C can be used to exit/interrupt any running
 # program
+
+# To exit a session, you can either close the terminal window or use exit.
+# You may have to use it twice - once to close the interactive job we were in, and
+# the second time to exit the ssh session altogether.
+exit
 
 ####### For MacOS #########
 
