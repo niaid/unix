@@ -95,26 +95,18 @@ ls -lh
 # If we want to make a new directory, we can use the mkdir command:
 mkdir Temp1
 ls
-cd Temp1
-mkdir Temp2
-cd Temp2
-pwd
-cd ../../
-mkdir Temp3
+
+# Make nested directories using "-p"
+mkdir -p Temp2/Temp3
+ls
+ls ./Temp2
 
 # You can remove an empty directory by rmdir
 
-rmdir Temp3
-rmdir Temp1 # it will not remove Temp1 as it is not an empty directory
-rm -r Temp1 # will remove both Temp1 and the directories under it.
+rmdir Temp1
+rmdir Temp2 # it will not remove Temp1 as it is not an empty directory
+rm -r Temp2 # will remove both Temp1 and the directories under it.
 # Depending on your settings you ma have to use the option "rm -rf"
-
-# In the last example we created the two temp directories in two separate steps.
-# If we had used the -p option of the mkdir command we could have done this in one step
-
-mkdir -p Temp1/Temp2
-ls Temp1
-
 
 # General Structure of Unix Command
 # Command argument1 <argument...>
@@ -164,6 +156,7 @@ ls
 # Moving files
 # We will move a file from our home directory (source location) to the Temp1 directory
 # (target location).
+mkdir Temp1
 mv boring.txt ./Temp1
 ls
 ls ./Temp1
