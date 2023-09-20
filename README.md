@@ -5,7 +5,7 @@ Training materials for Locus and UNIX introductory course
 
 - Instructors: Poorani Subramanian ([BCBB](https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch)) and Adam Erck ([NIAID High Performance Computing](https://locus.niaid.nih.gov/))
 - Help Emails: bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
-- [Class Slides](BCBB_Intro_to_Locus_and_unix_Fall2023.pdf)
+- [Class Slides](https://github.com/niaid/unix/raw/master/BCBB_Intro_to_Locus_and_unix_Fall2023.pdf?download=)
 
 
 
