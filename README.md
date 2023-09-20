@@ -40,7 +40,11 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
 
 ### Additional Example Scripts and Notes
 
-- [Locus NIAID HPC notes](locus/locus.md)
+- [Locus NIAID HPC notes](locus/locus.md)  
+  Description: Tips and best practices on using Locus
+
+- [Unix Cheat Sheet](Unix-Linux-Cheat-SheetWorld.pdf)  
+  Description: List of the most often-used UNIX commands
 
 - [handson_unix_I_2.sh](handson_unix_I_2.sh)  
   Description: Collection of basic UNIX commands for searching plain-test data sets.
