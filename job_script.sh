@@ -40,6 +40,7 @@ fastqc 22057_S2_R2_subsample.fastq.gz
 
 ## unload fastqc and any other loaded modules
 module purge
+module load uge
 
 ## load multiqc
 module load multiqc/1.9-Python-3.6.13
