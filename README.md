@@ -5,7 +5,7 @@ Training materials for Locus and UNIX introductory course
 
 - Instructors: Poorani Subramanian ([BCBB](https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch)) and Adam Erck ([NIAID High Performance Computing](https://locus.niaid.nih.gov/))
 - Help Emails: bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
-- [Locus NIAID HPC notes](locus/locus.md)
+- [Class Slides](BCBB_Intro_to_Locus_and_unix_Fall2023.pdf)
 
 
 
@@ -26,17 +26,21 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
 - **MacOS:** We will use Terminal.app which should already be installed; see [How to Open Terminal on Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/2.12/mac/11.0) for where to find it.
 - **Windows:** We will use PuTTY.  To install:
   1. Go to https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-  2.  Scroll down to "Alternative binary files."
+  2. Scroll down to "Alternative binary files."
   3. Look for **`putty.exe` (the SSH and Telnet client itself)**.
   4. Click on the blue "putty.exe" link next to *64-bit x86* or *32-bit x86* depending on your computer. If you do not know which version your computer can use, select the 32-bit version.  This will download the "putty.exe" executable program.
-  5. To start PuTTY, navigate to where you downloaded putty.exe, and double click on it.  This will open the PuTTY window.
-  6. **Note:** If you install PuTTY this way using the alternative binary file, you should not need administrative privileges.  Please feel free to email us (see contact info above) if you have any problems installing.
+  5. Look for **`pscp.exe` (an SCP client, i.e. command-line secure file copy)**.
+  6. Click on the blue "pscp.exe" link next to *64-bit x86* or *32-bit x86* depending on your computer. If you do not know which version your computer can use, select the 32-bit version.  This will download the "pscp.exe" executable program.
+  7. To start PuTTY, navigate to where you downloaded putty.exe, and double click on it.  This will open the PuTTY window.
+  8. **Note:** If you install PuTTY this way using the alternative binary file, you should not need administrative privileges.  Please feel free to email us (see contact info above) if you have any problems installing.
 
 ------
 
 
 
-### Additional Example Scripts
+### Additional Example Scripts and Notes
+
+- [Locus NIAID HPC notes](locus/locus.md)
 
 - [handson_unix_I_2.sh](handson_unix_I_2.sh)  
   Description: Collection of basic UNIX commands for searching plain-test data sets.
