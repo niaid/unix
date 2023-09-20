@@ -165,6 +165,9 @@ rm bor # use tab after this to complete
 cp interesting.txt boring.txt
 ls
 
+## WARNING: When using cp, if you have an existing file with the same name as your target file,
+# it will be OVERWRITTEN.
+
 # Moving files
 # We will move a file from our home directory (source location) to the Temp1 directory
 # (target location).
@@ -173,16 +176,19 @@ mv boring.txt ./Temp1
 ls
 ls -R
 
+# Renaming files
 # In the earlier example, the destination for the mv command was a directory name (Temp1).
 # So we moved a file from its source location to a target location
 # (‘source’ and ‘target’ are important concepts for many Unix commands). But
 # note that the target could have also been a (different) file name, rather than a directory.
-# E.g. let’s make a new file and move it whilst renaming it at the same time:
-
+# E.g. let’s move a file whilst renaming it at the same time:
 
 mv interesting.txt best.txt
 ls
 
+## The same WARNING applies with mv as cp - beware overwriting files.
+
+# Copying directories
 # Now lets copy a directory.  To copy an entire directory, we use the "cp -r" where
 # "-r" stands for "recursive".  We will recursively copy everything in a directory - including
 # the directory itself to our current working directory ".".
