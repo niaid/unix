@@ -63,3 +63,12 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
 
 ## Past Class Materials
 - [Sept 2019](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
+
+## Videos
+- [Fundamentals_of_Unix_for_Biologists_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Fundamentals_of_Unix_for_Biologists_subtitled.mp4) 
+- [Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) 
+- [Manipulating_files_and_data_on_Linux_MSB7103.subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Manipulating_files_and_data_on_Linux_MSB7103.subtitled.mp4) 
+- [Shell_Scripting_Programming_-_MSB_7103_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Shell_Scripting_Programming_-_MSB_7103_subtitled.mp4) 
+- [Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4) 
+- [Unix_for_Biologists_-_Part_1_-_11_2022_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Unix_for_Biologists_-_Part_1_-_11_2022_subtitled.mp4) 
+- [Unix_for_Biologists_-_Part_2_-_11_2022_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Unix_for_Biologists_-_Part_2_-_11_2022_subtitled.mp4) 
