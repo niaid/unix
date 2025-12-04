@@ -56,7 +56,7 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
   - [Video of lecture: Fundamentals_of_Unix_for_Biologists_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Fundamentals_of_Unix_for_Biologists_subtitled.mp4) 
 - Lecture: Introduction to Awk and Sed programming (Instructor: Amit Roy)
   - [Materials Sed Awk code and slides](https://github.com/niaid/unix/tree/master/AmitRoy-sed_awk_29_March_2021)
-  - [Video: Introduction_to_Awk_and_Sed_programming_(Part I)](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) and [Part2]()    
+  - [Video: Introduction_to_Awk_and_Sed_programming_(Part I)](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) and [Part2](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_Part_2_subtitled.mp4)    
 
 ## Additional Videos
 
@@ -65,3 +65,4 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
 - [Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4) 
 - [Unix_for_Biologists_-_Part_1_-_11_2022_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Unix_for_Biologists_-_Part_1_-_11_2022_subtitled.mp4) 
 - [Unix_for_Biologists_-_Part_2_-_11_2022_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Unix_for_Biologists_-_Part_2_-_11_2022_subtitled.mp4) 
+- [Intro_to_Locus_NIAID_High_Performance_Cluster_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Intro_to_Locus_NIAID_High_Performance_Cluster_subtitled.mp4) 
