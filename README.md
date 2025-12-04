@@ -1,23 +1,17 @@
 # Intro to Locus and unix
-Training materials for Locus and UNIX introductory course
-
-**Sept 20, 2023**  
+Training materials for a UNIX introductory course offered on Sept 20th, 2023. 
+> The materials showcase the use of an HPC cluster (LOCUS), yet the code is for general use
 
 - Instructors: Poorani Subramanian ([BCBB](https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch)) and Adam Erck ([NIAID High Performance Computing](https://locus.niaid.nih.gov/))
-- Help Emails: bioinformatics@niaid.nih.gov or for Locus NIAID HPC SUPPORT <NIAIDHPCSUPPORT@niaid.nih.gov>
+- Help Emails: bioinformatics@niaid.nih.gov
 - [Class Slides](https://github.com/niaid/unix/raw/master/BCBB_Intro_to_Locus_and_unix_Fall2023.pdf?download=)
 
-
-
 ### Class Scripts
-
 [handson_unix_I_1.sh](handson_unix_I_1.sh)  
 Description: Collection of basic UNIX commands to navigate and move files.
 
 [job_script.sh](job_script.sh)  
 Description: batch job script for submission with UGE on Locus
-
-
 
 ### Terminal/Shell Software
 
@@ -36,16 +30,10 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
 
 ------
 
-
-
 ### Additional Example Scripts and Notes
-
-- [Locus NIAID HPC notes](locus/locus.md)  
-  Description: Tips and best practices on using Locus
 
 - [Unix Cheat Sheet](Unix-Linux-Cheat-SheetWorld.pdf)  
   Description: List of the most often-used UNIX commands
-
 - [handson_unix_I_2.sh](handson_unix_I_2.sh)  
   Description: Collection of basic UNIX commands for searching plain-test data sets.
 - [how_to_write_bash_script.sh](./example_scripts/how_to_write_bash_script.sh)  
