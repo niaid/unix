@@ -55,7 +55,7 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
   - [Materials of Sept 2019 Unix Training](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
   - [Video of lecture: Fundamentals_of_Unix_for_Biologists_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Fundamentals_of_Unix_for_Biologists_subtitled.mp4) 
 - Lecture: Introduction to Awk and Sed programming (Instructor: Amit Roy)
-  - Materials
+  - [Materials Sed Awk code and slides](https://github.com/niaid/unix/tree/master/AmitRoy-sed_awk_29_March_2021)
   - [Video: Introduction_to_Awk_and_Sed_programming_(Part I)](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) and [Part2]()    
 
 ## Additional Videos
