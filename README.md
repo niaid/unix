@@ -5,6 +5,7 @@ Training materials for a UNIX introductory course offered on Sept 20th, 2023.
 - Instructors: Poorani Subramanian ([BCBB](https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch)) and Adam Erck ([NIAID High Performance Computing](https://locus.niaid.nih.gov/))
 - Help Emails: bioinformatics@niaid.nih.gov
 - [Class Slides](https://github.com/niaid/unix/raw/master/BCBB_Intro_to_Locus_and_unix_Fall2023.pdf?download=)
+- [Video of lecture"intro to locus...](https://www.youtube.com/watch?v=g6nA3cgG2C0)
 
 ### Class Scripts
 [handson_unix_I_1.sh](handson_unix_I_1.sh)  
