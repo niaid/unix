@@ -50,11 +50,15 @@ We will be connecting to Locus via a terminal/shell program.  Here are the instr
   Description: Example of while loop script.
 
 ## Past Class Materials
-- [Sept 2019](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
+- Lecture: Unix Training (Instructors: Phil Cruz and Amit Roy)
+  - [Materials of Sept 2019 Unix Training](https://github.com/niaid/unix/tree/Sep2019) - [download](https://github.com/niaid/unix/archive/Sep2019.zip)
+  - [Video of lecture: Fundamentals_of_Unix_for_Biologists_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Fundamentals_of_Unix_for_Biologists_subtitled.mp4) 
+- Lecture: Introduction to Awk and Sed programming (Instructor: Amit Roy)
+  - Materials
+  - [Video: Introduction_to_Awk_and_Sed_programming_(Part I)](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) and [Part2]()    
 
-## Videos
-- [Fundamentals_of_Unix_for_Biologists_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Fundamentals_of_Unix_for_Biologists_subtitled.mp4) 
-- [Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Introduction_to_Awk_and_Sed_programming_3_29_20_subtitled_trim.mp4) 
+## Additional Videos
+
 - [Manipulating_files_and_data_on_Linux_MSB7103.subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Manipulating_files_and_data_on_Linux_MSB7103.subtitled.mp4) 
 - [Shell_Scripting_Programming_-_MSB_7103_subtitled.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Shell_Scripting_Programming_-_MSB_7103_subtitled.mp4) 
 - [Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4](https://s3.amazonaws.com/proj-bip-prod-publicread/training/unix/Shell_Scripting_Programming_3_23_2021_subtitled_trim.mp4) 
